@@ -1,10 +1,10 @@
 
-import { Sparkles, BookOpen, Beaker, Zap, Cocktail, MessageCircle } from "lucide-react";
+import { Sparkles, BookOpen, Beaker, Zap, GlassWater, MessageCircle } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const features = [
   {
-    icon: <Cocktail className="w-6 h-6 text-cyberpunk-neon" />,
+    icon: <GlassWater className="w-6 h-6 text-cyberpunk-neon" />,
     title: "Personalized Recipes",
     description: "Kenny crafts cocktail recipes tailored to your taste preferences, available ingredients, and dietary restrictions.",
     color: "neon-blue",
