@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import Disclaimer from "@/components/Disclaimer";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import DisclaimerPopup from "@/components/DisclaimerPopup";
 import { toast } from "@/components/ui/use-toast";
 
 const Index = () => {
@@ -16,7 +17,7 @@ const Index = () => {
     // Welcome toast
     setTimeout(() => {
       toast({
-        title: "Welcome to iMixologist GPT!",
+        title: "Welcome to Kenny the Mixologist!",
         description: "Meet Kenny, your virtual bartender ready to craft amazing cocktails just for you.",
         duration: 5000,
       });
@@ -36,6 +37,7 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
+      <DisclaimerPopup />
     </div>
   );
 };

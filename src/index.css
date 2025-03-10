@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -164,6 +163,19 @@
     background-image: radial-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px);
     background-size: 32px 32px;
     background-position: 0 0;
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-cyberpunk-darker/50 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-cyberpunk-neon to-cyberpunk-purple rounded-full;
   }
 }
 
