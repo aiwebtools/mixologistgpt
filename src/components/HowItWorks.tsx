@@ -1,4 +1,3 @@
-
 import { MessageSquare, Sparkles, Coffee, ExternalLink, ChefHat } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
@@ -121,9 +120,6 @@ const HowItWorks = () => {
         {/* YouTube Video Section */}
         <div className="mt-24 max-w-4xl mx-auto">
           <div className="glass-card rounded-xl p-6 border border-white/10">
-            <h3 className="text-2xl font-bold mb-6 text-center">
-              Watch <span className="neon-text-blue">Kenny in Action</span>
-            </h3>
             <div className="aspect-video relative rounded-lg overflow-hidden">
               <iframe
                 className="absolute inset-0 w-full h-full"
