@@ -22,6 +22,9 @@ const Index = () => {
         duration: 5000,
       });
     }, 2000);
+    
+    // Set video play policy for autoplay
+    document.documentElement.setAttribute('allow-autoplay', 'true');
   }, []);
 
   return (

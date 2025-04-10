@@ -117,6 +117,28 @@ const HowItWorks = () => {
             </span>
           </a>
         </div>
+        
+        {/* YouTube Video Section */}
+        <div className="mt-24 max-w-4xl mx-auto">
+          <div className="glass-card rounded-xl p-6 border border-white/10">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              Watch <span className="neon-text-blue">Kenny in Action</span>
+            </h3>
+            <div className="aspect-video relative rounded-lg overflow-hidden">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/vJz1HOGtV0I?autoplay=1&mute=0&controls=1&showinfo=0&rel=0&hd=1"
+                title="Kenny the Mixologist Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <p className="text-gray-300 mt-4 text-center">
+              See how Kenny creates amazing personalized cocktail recipes just for you!
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
