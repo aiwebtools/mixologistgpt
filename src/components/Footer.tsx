@@ -1,5 +1,5 @@
 
-import { Phone, Mail, ExternalLink, Martini } from "lucide-react";
+import { Phone, Mail, ExternalLink, Martini, ChefHat } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -65,6 +65,17 @@ const Footer = () => {
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
                 >
                   TRY MIXOLOGIST GPT
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chefgpt.lovable.app/?via=aiwebtools"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-cyberpunk-green transition-colors flex items-center gap-1"
+                >
+                  TRY CHEF SIZZLE GPT
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>

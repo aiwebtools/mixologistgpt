@@ -1,5 +1,5 @@
 
-import { Sparkles, ExternalLink } from "lucide-react";
+import { Sparkles, ExternalLink, ChefHat } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -21,11 +21,11 @@ const CTA = () => {
           <div className="relative z-10 text-center">
             <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
               Ready To Meet Your New<br />
-              <span className="neon-text-blue">AI Mixologist?</span>
+              <span className="neon-text-blue">AI Assistants?</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              Start crafting amazing cocktails with Kenny's expert guidance and discover a world of mixology at your fingertips
+              Start crafting amazing cocktails and delicious meals with our expert AI guides
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -38,6 +38,18 @@ const CTA = () => {
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   TRY MIXOLOGIST GPT NOW
                   <Sparkles className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </span>
+              </a>
+              
+              <a
+                href="https://chefgpt.lovable.app/?via=aiwebtools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="neon-button-green group"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  TRY CHEF SIZZLE GPT NOW
+                  <ChefHat className="w-5 h-5 transition-transform group-hover:scale-110" />
                 </span>
               </a>
               

@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Martini, Menu, X } from "lucide-react";
+import { Martini, Menu, X, ChefHat } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -98,6 +98,18 @@ const Header = () => {
                 TRY MIXOLOGIST GPT
               </a>
               <a
+                href="https://chefgpt.lovable.app/?via=aiwebtools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="neon-button-green group"
+                onClick={closeMenu}
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  TRY CHEF SIZZLE GPT
+                  <ChefHat className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </span>
+              </a>
+              <a
                 href="#faq"
                 className="text-white hover:text-cyberpunk-neon transition-colors"
                 onClick={closeMenu}
@@ -123,7 +135,18 @@ const Header = () => {
             </div>
           </>
         ) : (
-          <nav className="flex items-center gap-8">
+          <nav className="flex items-center gap-6">
+            <a
+              href="https://chefgpt.lovable.app/?via=aiwebtools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="neon-button-green text-sm group"
+            >
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                TRY CHEF SIZZLE GPT
+                <ChefHat className="w-4 h-4 transition-transform group-hover:scale-110" />
+              </span>
+            </a>
             <a
               href="#faq"
               className="text-white hover:text-cyberpunk-neon transition-colors text-sm"
