@@ -1,3 +1,4 @@
+
 import { MessageSquare, Sparkles, Coffee, ExternalLink, ChefHat } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
@@ -131,7 +132,7 @@ const HowItWorks = () => {
               ></iframe>
             </div>
             <p className="text-gray-300 mt-4 text-center">
-              See how Kenny creates amazing personalized cocktail recipes just for you!
+              See how Kenny creates amazing personalized cocktail recipes just for you! Or ask Chef Sizzle to bless your meal with that fire!
             </p>
             
             {/* Added Buttons Section */}
