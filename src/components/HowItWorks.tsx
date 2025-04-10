@@ -1,5 +1,5 @@
 
-import { MessageSquare, Sparkles, Coffee } from "lucide-react";
+import { MessageSquare, Sparkles, Coffee, ExternalLink, ChefHat } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const steps = [
@@ -137,6 +137,33 @@ const HowItWorks = () => {
             <p className="text-gray-300 mt-4 text-center">
               See how Kenny creates amazing personalized cocktail recipes just for you!
             </p>
+            
+            {/* Added Buttons Section */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mt-8">
+              <a
+                href="https://chatgpt.com/g/g-eFVru5HD4-mixologist-gpt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="neon-button-blue group"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  TRY MIXOLOGIST GPT
+                  <Sparkles className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </span>
+              </a>
+              
+              <a
+                href="https://chefgpt.lovable.app/?via=aiwebtools"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="neon-button-green group"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  TRY CHEF SIZZLE GPT
+                  <ChefHat className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
