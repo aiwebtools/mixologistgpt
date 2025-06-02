@@ -115,7 +115,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://openai.com/policies/privacy-policy/"
+                  href="https://www.aiwebtools.ai/privacy-policy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
@@ -126,7 +126,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://aiwebtools.ai/terms-of-services"
+                  href="https://www.aiwebtools.ai/terms-of-service"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
