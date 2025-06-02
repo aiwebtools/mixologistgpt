@@ -152,7 +152,7 @@
   .neon-button::before {
     content: "";
     @apply absolute inset-0 opacity-50 transition-opacity duration-300;
-    background: linear-gradient(to right, var(--tw-gradient-stops));
+    background: linear-gradient(to right, rgba(0, 240, 255, 0.8), rgba(255, 42, 109, 0.8));
   }
   
   .neon-button:hover::before {
@@ -172,26 +172,38 @@
   
   .neon-button-blue {
     @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-neon/80;
-    --tw-gradient-stops: rgba(0, 240, 255, 0.8), rgba(58, 134, 255, 0.8);
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.1);
+  }
+  
+  .neon-button-blue::before {
+    background: linear-gradient(to right, rgba(0, 240, 255, 0.8), rgba(58, 134, 255, 0.8));
   }
   
   .neon-button-pink {
     @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-pink/80;
-    --tw-gradient-stops: rgba(255, 42, 109, 0.8), rgba(212, 70, 239, 0.8);
     box-shadow: 0 0 20px rgba(255, 42, 109, 0.3), inset 0 0 20px rgba(255, 42, 109, 0.1);
+  }
+  
+  .neon-button-pink::before {
+    background: linear-gradient(to right, rgba(255, 42, 109, 0.8), rgba(212, 70, 239, 0.8));
   }
   
   .neon-button-green {
     @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-green/80;
-    --tw-gradient-stops: rgba(5, 255, 0, 0.8), rgba(0, 240, 255, 0.8);
     box-shadow: 0 0 20px rgba(5, 255, 0, 0.3), inset 0 0 20px rgba(5, 255, 0, 0.1);
+  }
+  
+  .neon-button-green::before {
+    background: linear-gradient(to right, rgba(5, 255, 0, 0.8), rgba(0, 240, 255, 0.8));
   }
 
   .neon-button-purple {
     @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-purple/80;
-    --tw-gradient-stops: rgba(212, 70, 239, 0.8), rgba(135, 30, 255, 0.8);
     box-shadow: 0 0 20px rgba(212, 70, 239, 0.3), inset 0 0 20px rgba(212, 70, 239, 0.1);
+  }
+  
+  .neon-button-purple::before {
+    background: linear-gradient(to right, rgba(212, 70, 239, 0.8), rgba(135, 30, 255, 0.8));
   }
   
   .cyberpunk-grid-bg {
