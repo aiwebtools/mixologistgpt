@@ -1,14 +1,13 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 240 10% 3%;
+    --background: 240 10% 5%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 6%;
+    --card: 240 10% 8%;
     --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3%;
@@ -67,27 +66,9 @@
   body {
     @apply bg-cyberpunk-dark text-foreground antialiased overflow-x-hidden;
     background-image: 
-      radial-gradient(circle at 25% 25%, rgba(255, 42, 109, 0.15), transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(0, 240, 255, 0.12), transparent 50%),
-      radial-gradient(circle at 50% 10%, rgba(212, 70, 239, 0.1), transparent 60%),
-      radial-gradient(circle at 80% 40%, rgba(5, 255, 0, 0.08), transparent 40%),
-      linear-gradient(135deg, rgba(255, 42, 109, 0.05), rgba(0, 240, 255, 0.05), rgba(212, 70, 239, 0.05));
-    animation: divine-background 15s ease-in-out infinite;
-  }
-
-  @keyframes divine-background {
-    0%, 100% {
-      background-position: 0% 0%, 100% 100%, 50% 0%, 80% 40%, 0% 0%;
-    }
-    25% {
-      background-position: 25% 25%, 75% 75%, 40% 10%, 70% 50%, 25% 25%;
-    }
-    50% {
-      background-position: 50% 50%, 50% 50%, 60% 20%, 90% 30%, 50% 50%;
-    }
-    75% {
-      background-position: 75% 25%, 25% 75%, 30% 15%, 60% 60%, 75% 25%;
-    }
+      radial-gradient(circle at 50% 0%, rgba(255, 42, 109, 0.12), transparent 400px),
+      radial-gradient(circle at 0% 50%, rgba(0, 240, 255, 0.08), transparent 200px),
+      radial-gradient(circle at 100% 50%, rgba(212, 70, 239, 0.08), transparent 200px);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -109,13 +90,12 @@
   }
   
   .glass-card {
-    @apply bg-white/8 backdrop-blur-lg border border-white/15 shadow-divine;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-glass;
   }
   
   .neon-text {
     @apply font-bold text-transparent bg-clip-text;
-    text-shadow: 0 0 10px var(--tw-gradient-from), 0 0 20px var(--tw-gradient-from), 0 0 30px var(--tw-gradient-from);
+    text-shadow: 0 0 10px var(--tw-gradient-from), 0 0 20px var(--tw-gradient-from);
   }
   
   .neon-text-blue {
@@ -145,85 +125,44 @@
   }
   
   .neon-button {
-    @apply relative overflow-hidden rounded-xl px-6 py-3 font-bold tracking-wider text-white transition-all duration-300 hover:translate-y-[-2px] hover:shadow-divine-glow active:translate-y-[1px];
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    @apply relative overflow-hidden rounded-xl px-6 py-3 font-bold tracking-wider text-white transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg active:translate-y-[1px];
   }
   
   .neon-button::before {
     content: "";
     @apply absolute inset-0 opacity-50 transition-opacity duration-300;
-    background: linear-gradient(to right, rgba(0, 240, 255, 0.8), rgba(255, 42, 109, 0.8));
+    background: linear-gradient(to right, var(--tw-gradient-stops));
   }
   
   .neon-button:hover::before {
-    @apply opacity-90;
-  }
-  
-  .neon-button::after {
-    content: "";
-    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    animation: shimmer 2s infinite;
-  }
-  
-  .neon-button:hover::after {
-    @apply opacity-100;
+    @apply opacity-80;
   }
   
   .neon-button-blue {
-    @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-neon/80;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.1);
-  }
-  
-  .neon-button-blue::before {
-    background: linear-gradient(to right, rgba(0, 240, 255, 0.8), rgba(58, 134, 255, 0.8));
+    @apply neon-button bg-cyberpunk-dark border border-cyberpunk-neon/80;
+    --tw-gradient-stops: rgba(0, 240, 255, 0.8), rgba(58, 134, 255, 0.8);
   }
   
   .neon-button-pink {
-    @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-pink/80;
-    box-shadow: 0 0 20px rgba(255, 42, 109, 0.3), inset 0 0 20px rgba(255, 42, 109, 0.1);
-  }
-  
-  .neon-button-pink::before {
-    background: linear-gradient(to right, rgba(255, 42, 109, 0.8), rgba(212, 70, 239, 0.8));
+    @apply neon-button bg-cyberpunk-dark border border-cyberpunk-pink/80;
+    --tw-gradient-stops: rgba(255, 42, 109, 0.8), rgba(212, 70, 239, 0.8);
   }
   
   .neon-button-green {
-    @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-green/80;
-    box-shadow: 0 0 20px rgba(5, 255, 0, 0.3), inset 0 0 20px rgba(5, 255, 0, 0.1);
-  }
-  
-  .neon-button-green::before {
-    background: linear-gradient(to right, rgba(5, 255, 0, 0.8), rgba(0, 240, 255, 0.8));
+    @apply neon-button bg-cyberpunk-dark border border-cyberpunk-green/80;
+    --tw-gradient-stops: rgba(5, 255, 0, 0.8), rgba(0, 240, 255, 0.8);
   }
 
   .neon-button-purple {
-    @apply neon-button bg-cyberpunk-dark border-2 border-cyberpunk-purple/80;
-    box-shadow: 0 0 20px rgba(212, 70, 239, 0.3), inset 0 0 20px rgba(212, 70, 239, 0.1);
-  }
-  
-  .neon-button-purple::before {
-    background: linear-gradient(to right, rgba(212, 70, 239, 0.8), rgba(135, 30, 255, 0.8));
+    @apply neon-button bg-cyberpunk-dark border border-cyberpunk-purple/80;
+    --tw-gradient-stops: rgba(212, 70, 239, 0.8), rgba(135, 30, 255, 0.8);
   }
   
   .cyberpunk-grid-bg {
     @apply relative;
-    background-image: 
-      radial-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px),
-      radial-gradient(rgba(255, 42, 109, 0.1) 1px, transparent 1px);
-    background-size: 32px 32px, 48px 48px;
-    background-position: 0 0, 16px 16px;
-    animation: grid-drift 20s linear infinite;
-  }
-
-  @keyframes grid-drift {
-    from { background-position: 0 0, 16px 16px; }
-    to { background-position: 32px 32px, 48px 48px; }
-  }
-
-  @keyframes shimmer {
-    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    background-image: radial-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: 0 0;
   }
 
   /* Custom scrollbar for webkit browsers */
@@ -242,11 +181,11 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+    text-shadow: 0 0 10px currentColor;
   }
   
   .text-glow-lg {
-    text-shadow: 0 0 15px currentColor, 0 0 30px currentColor, 0 0 45px currentColor;
+    text-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
   }
   
   .animate-delay-100 {
@@ -267,10 +206,6 @@
   
   .animate-delay-500 {
     animation-delay: 500ms;
-  }
-  
-  .animate-delay-700 {
-    animation-delay: 700ms;
   }
   
   .mask-fade-out-b {
