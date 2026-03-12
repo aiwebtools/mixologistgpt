@@ -35,7 +35,7 @@ const Index = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "AI WEB TOOLS",
-          "item": "https://www.aiwebtools.ai"
+          "item": "https://aiwebtools.lovable.app/?via=aiwebtools"
         },
         {
           "@type": "ListItem",
