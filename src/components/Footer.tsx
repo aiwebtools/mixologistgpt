@@ -122,7 +122,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.aiwebtools.ai/privacy-policy"
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
