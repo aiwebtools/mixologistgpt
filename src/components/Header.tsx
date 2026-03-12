@@ -74,7 +74,7 @@ const Header = () => {
             {/* Mobile menu */}
             <div
               className={cn(
-                "fixed inset-0 z-50 bg-cyberpunk-darker/95 backdrop-blur-md flex flex-col items-center justify-center gap-8 transition-all duration-300 ease-in-out",
+                "fixed inset-0 z-50 bg-cyberpunk-darker/95 backdrop-blur-md flex flex-col items-center justify-center gap-6 transition-all duration-200 ease-in-out overflow-y-auto py-16",
                 isMenuOpen
                   ? "opacity-100 visible translate-x-0"
                   : "opacity-0 invisible translate-x-full"
@@ -124,7 +124,7 @@ const Header = () => {
                 Disclaimer
               </a>
               <a
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-cyberpunk-neon transition-colors"
@@ -160,7 +160,7 @@ const Header = () => {
               Disclaimer
             </a>
             <a
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-cyberpunk-neon transition-colors text-sm"

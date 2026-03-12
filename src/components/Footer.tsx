@@ -103,7 +103,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.aiwebtools.ai"
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
@@ -122,7 +122,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.aiwebtools.ai/privacy-policy"
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
@@ -134,7 +134,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.aiwebtools.ai/terms-of-service"
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-cyberpunk-neon transition-colors flex items-center gap-1"
@@ -151,7 +151,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex justify-start md:justify-end">
               <a
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-cyberpunk-neon/20 to-cyberpunk-blue/20 backdrop-blur-sm px-5 py-3 rounded-full border border-cyberpunk-neon/30 text-white hover:bg-gradient-to-br hover:from-cyberpunk-neon/30 hover:to-cyberpunk-blue/30 transition-all hover:border-cyberpunk-neon/50"
@@ -166,7 +166,7 @@ const Footer = () => {
         
         <div className="py-6 border-t border-gray-800 text-center text-sm text-gray-500">
           <a
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-cyberpunk-neon transition-colors"
