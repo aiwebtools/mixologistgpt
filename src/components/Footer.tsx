@@ -166,7 +166,7 @@ const Footer = () => {
         
         <div className="py-6 border-t border-gray-800 text-center text-sm text-gray-500">
           <a
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-cyberpunk-neon transition-colors"
